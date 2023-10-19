@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsla(190, 64%, 73%, 0.7); /* Celeste claro con transparencia */
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.header-btn {
+    cursor: pointer;
+    background-color: #C0C0C0; /* Ajusta según tu diseño */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    
+    
+    
+}
+
+.resena {
+    position: absolute;
+     /* Muestra la reseña justo debajo del botón */
+    display: none; /* La oculta inicialmente */
+    /* Otros estilos */
+    top: 15%;
+    right: 0%;
+    transform: translateX(-50%);
+    padding: 0 0 0 0px;
+    background-color: hsla(190, 64%, 73%, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1; 
+    opacity: 0; /* Inicialmente establecido a 0 para que esté invisible */
+    transition: opacity 3s ease; /* Transición suave de 0.3 segundos */
+
+}
+
+
+
+.logo h1 {
+    margin: 0;
+    font-size: 3.5em;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: hsla(190, 64%, 73%, 0.7); /* Celeste claro con transparencia */
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    margin-bottom: 20px; /* O ajusta según sea necesario */
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+main {
+    padding: 20px;
+    width: 80%;
+}
+
+footer {
+    background-color: hsla(190, 64%, 73%, 0.7); /* Celeste claro con transparencia */
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2px;
+    border: 0px;
+    
+}
+html {
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra el contenido */
+}
+body {
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra el contenido */
+
+}
+
+@media (min-width: 600px) {
+    body {
+        max-width: 800px; /* Ajusta según sea necesario */
+    }
+}
+
+@media (min-width: 600px) {
+    footer {
+        max-width: 800px; /* Ajusta según sea necesario */
+    }
+}
+
+
